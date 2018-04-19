@@ -10,8 +10,16 @@ class ArticlesController < ApplicationController
         redirect_to @article
     end
     
+    def new
+    end
+    
+    def 
+        index
+        @articles= Article.all
+    end
+    
     def show
-        @article = Article.find(params[:id])
+        @articles = Article.find(params[:id])
         #test commit
     end
     
